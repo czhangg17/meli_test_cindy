@@ -20,9 +20,11 @@ La carpeta `Scripts` contiene los notebooks de, extraccion análisis exploratori
 
 * `prueba_meli.ipynb`: Contiene el Análisis Exploratorio de algunas variables, y un modelo LDA para los títulos.
 
-La carpeta `data` contiene los archivos descargados para Colombia
-La carpeta `images` contiene llas imagenes descargadas de los items correspondientes a la data
-La carpeta `results` contiene resultados del modelo LDA
+La carpeta `data` contiene los archivos descargados para Colombia.
+
+La carpeta `images` contiene llas imagenes descargadas de los items correspondientes a la data.
+
+La carpeta `results` contiene resultados del modelo LDA.
 
 
 
