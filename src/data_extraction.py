@@ -135,7 +135,7 @@ class data_extraction:
         site_id=self.return_site_id(country=country_name)
         n_items=requests.get(f'https://api.mercadolibre.com/categories/{category_id}').json().get("total_items_in_this_category")
         # creamos el vector de offsets
-        offset_vec = range(0, (1000 // 50) * 50 + 1, 50)
+        offset_vec = range(0, (n_items // 50) * 50 + 1, 50)
         df_products=[pd.DataFrame(self.get_items_api(country_id=site_id,category_id=category_id,offset=offset)) for offset in offset_vec]
         df_items = pd.concat(df_products, ignore_index=True)
         #extrayendo unos jsons que tienen internamente
